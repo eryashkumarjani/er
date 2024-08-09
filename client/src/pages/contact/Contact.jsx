@@ -3,6 +3,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import { TbMailFilled } from "react-icons/tb";
 import { PiWhatsappLogoFill } from "react-icons/pi";
 import { PiLinkedinLogoFill } from "react-icons/pi";
+import ContactImg from "../../assets/images/contactImg.jpeg";
 
 const Contact = () => {
   return (
@@ -12,7 +13,7 @@ const Contact = () => {
           alt={"photo of yashkumar"}
           className="gallery-img"
           effect="blur"
-          src={"./public/contactImg.jpeg"}
+          src={ContactImg}
         />
       </div>
       <div className="contact-title">

@@ -1,5 +1,6 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import AboutImg from "../../assets/images/aboutImg.jpeg";
 
 const About = () => {
   return (
@@ -9,7 +10,7 @@ const About = () => {
           alt={"photo of yashkumar"}
           className="gallery-img"
           effect="blur"
-          src={"./public/aboutImg.jpeg"}
+          src={AboutImg}
         />
       </div>
       <div className="about-title">
