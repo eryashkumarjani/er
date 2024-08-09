@@ -18,8 +18,8 @@
   @include flex-center-mixin;
 
   .typing-loader {
-    width: 14ch;
-    animation: typing 2s steps(22), blink 0.1s step-end infinite alternate;
+    width: 3ch;
+    animation: typing 1s steps(22), blink 0.1s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
@@ -226,6 +226,51 @@
 //about
 .about {
   @include flex-center-mixin;
+  gap: 5rem;
+  width: 69%;
+  margin: 0 auto;
+
+  .about-img {
+    img {
+      width: 12rem;
+      border: 10px solid #b3fdd4;
+      filter: grayscale(100%);
+
+      &:hover {
+        filter: grayscale(0%);
+      }
+    }
+  }
+  .about-title {
+    h3,
+    p {
+      margin-bottom: 0.9rem;
+    }
+  }
+}
+
+// about - responsive
+@media only screen and (max-width: 639px) {
+  .about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 3rem;
+    .about-title {
+      text-align: center;
+      h3 {
+        font-size: larger;
+      }
+      p {
+        text-align: justify;
+      }
+      h3,
+      p {
+        margin-bottom: 2rem;
+      }
+    }
+  }
 }
 
 //resume
@@ -236,4 +281,72 @@
 //contact
 .contact {
   @include flex-center-mixin;
+  gap: 5rem;
+  width: 84%;
+  margin: 0 auto;
+
+  .contact-img {
+    img {
+      width: 12rem;
+      border: 10px solid #b3fdd4;
+      filter: grayscale(100%);
+
+      &:hover {
+        filter: grayscale(0%);
+      }
+    }
+  }
+  .contact-title {
+    hr {
+      margin: 1rem;
+    }
+    .contact-now {
+      font-size: x-large;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      .social {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        transition: all 0.3s ease-in-out;
+        text-decoration: none;
+        width: 51%;
+        margin: 0 auto;
+
+        .social-icon {
+          &:hover {
+            color: $layout-text-hover-color;
+            text-shadow: 0px 0px 6px $layout-text-hover-color;
+          }
+        }
+
+        label {
+          font-size: small;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+          padding: 0.1rem 0rem;
+          color: $layout-text-hover-color;
+          text-shadow: 0px 0px 6px $layout-text-hover-color;
+        }
+      }
+    }
+  }
+}
+
+// contact - responsive
+@media only screen and (max-width: 639px) {
+  .contact {
+    flex-direction: column;
+    gap: 3rem;
+    width: 95%;
+    .contact-title {
+      hr {
+        margin: 1.5rem;
+      }
+    }
+  }
 }

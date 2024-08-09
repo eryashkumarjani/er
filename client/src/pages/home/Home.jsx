@@ -9,7 +9,7 @@ const Home = () => {
           alt={"photo of yashkumar"}
           className="gallery-img"
           effect="blur"
-          src={"https://eryashkumarjani-portfolio.netlify.app/homeImg.Jpeg"}
+          src={"./public/homeImg.jpeg"}
         />
       </div>
       <div className="home-title">

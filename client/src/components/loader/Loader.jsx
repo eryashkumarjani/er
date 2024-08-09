@@ -3,7 +3,7 @@ import React from "react";
 const Loader = () => {
   return (
     <div className="loader">
-      <div className="typing-loader">Please wait...</div>
+      Please wait<span className="typing-loader">...</span>
     </div>
   );
 };
