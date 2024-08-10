@@ -17,7 +17,7 @@ const Contact = () => {
         />
       </div>
       <div className="contact-title">
-        <h3> LET'S CONTACT WITH YASHKUMAR JANI </h3>
+        <h3> LET'S CONNECT WITH YASHKUMAR JANI </h3>
         <hr />
         <div className="contact-now">
           <a

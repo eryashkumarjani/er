@@ -126,7 +126,9 @@
   nav {
     border: 1px solid $layout-text-color;
     background-color: $layout-bg-color;
-
+    -webkit-box-shadow: 0px 0px 36px 36px rgba(7, 14, 17, 1);
+    -moz-box-shadow: 0px 0px 36px 36px rgba(7, 14, 17, 1);
+    box-shadow: 0px 0px 36px 36px rgba(7, 14, 17, 1);
     width: fit-content;
     padding: 0.5rem 1rem;
     border-radius: 2rem;
@@ -227,7 +229,7 @@
 .about {
   @include flex-center-mixin;
   gap: 5rem;
-  width: 69%;
+  width: 54%;
   margin: 0 auto;
 
   .about-img {
@@ -257,6 +259,7 @@
     flex-direction: column;
     height: 100vh;
     gap: 3rem;
+    width: 90%;
     .about-title {
       text-align: center;
       h3 {
@@ -271,11 +274,6 @@
       }
     }
   }
-}
-
-//resume
-.resume {
-  @include flex-center-mixin;
 }
 
 //contact
@@ -346,6 +344,121 @@
     .contact-title {
       hr {
         margin: 1.5rem;
+      }
+    }
+  }
+}
+
+//resume
+.resume {
+  flex-direction: column;
+  width: 90%;
+  margin: 3rem auto;
+
+  hr {
+    width: 100%;
+    margin: 2.5rem 0rem;
+  }
+  .resume-title {
+    text-align: center;
+  }
+
+  .resume-content {
+    display: flex;
+    width: 100%;
+
+    .content-title {
+      flex-basis: 47%;
+    }
+    .content-container {
+      flex-basis: 50%;
+
+      .content-experience {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+
+        .company-title {
+          flex-basis: 30%;
+        }
+        .company-work {
+          flex-basis: 70%;
+
+          .swiper {
+            width: 600px;
+            height: 150px;
+            margin-top: 1.5rem;
+
+            .swiper-slide {
+              border: 1px solid;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              svg {
+                font-size: xxx-large;
+              }
+            }
+
+            .swiper-pagination-bullet {
+              background: #0fba8d !important;
+            }
+            .swiper-pagination-bullet-active {
+              background: #05e564;
+            }
+            .swiper-pagination {
+              background-color: transparent !important;
+            }
+          }
+        }
+
+        #skills {
+          flex-basis: 100%;
+        }
+
+        .company-img {
+          img {
+            width: 100%;
+            border: 10px solid #b3fdd4;
+            filter: grayscale(100%);
+            margin-top: 0.5rem;
+
+            &:hover {
+              filter: grayscale(0%);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .resume-footer {
+    text-align: center;
+    button {
+      margin-bottom: 10rem;
+      padding: 5px 10px;
+    }
+  }
+}
+
+// resume - responsive
+@media only screen and (max-width: 639px) {
+  .resume {
+    .resume-content {
+      flex-direction: column;
+      .content-title {
+        margin-bottom: 1rem;
+      }
+      .content-container {
+        .content-experience {
+          flex-direction: column;
+          .company-work {
+            .swiper {
+              width: 350px;
+            }
+          }
+        }
       }
     }
   }

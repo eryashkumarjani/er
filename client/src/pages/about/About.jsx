@@ -24,11 +24,12 @@ const About = () => {
           sustainability.
         </p>
         <a aria-label="Chat on WhatsApp" href="https://wa.me/918320870517">
-          <img
+          {/* <img
             alt="Chat on WhatsApp"
             src="https://www.pmexamstudy.com/wp-content/uploads/2020/07/whatsapp-button.png"
             width={100}
-          />{" "}
+          />{" "} */}
+          <button style={{ padding: "5px 10px" }}>LET'S CHAT</button>
         </a>
       </div>
     </div>
