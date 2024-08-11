@@ -4,7 +4,7 @@ import HomeImg from "../../assets/images/homeImg.jpeg";
 
 const Home = () => {
   return (
-    <div className="home slide-up-fade-in">
+    <section className="home slide-up-fade-in">
       <div className="home-img">
         <LazyLoadImage
           alt={"photo of yashkumar"}
@@ -17,7 +17,7 @@ const Home = () => {
         <h1>Hi, I'm Yashkumar Jani</h1>
         <p className="typing-loader ">MERN STACK DEVELOPER</p>
       </div>
-    </div>
+    </section>
   );
 };
 

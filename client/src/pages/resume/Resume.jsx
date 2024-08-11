@@ -32,12 +32,12 @@ import { RxGithubLogo } from "react-icons/rx";
 
 const Resume = () => {
   return (
-    <div className="resume slide-up-fade-in">
+    <section className="resume slide-up-fade-in">
       <div className="resume-title">
         <h1>Resume</h1>
       </div>
       <hr />
-      <div className="resume-content">
+      <article className="resume-content">
         <div className="content-title">
           <h2>Work Experience</h2>
         </div>
@@ -134,9 +134,9 @@ const Resume = () => {
             </div>
           </div>
         </div>
-      </div>
+      </article>
       <hr />
-      <div className="resume-content">
+      <article className="resume-content">
         <div className="content-title">
           <h2>SKILLS</h2>
         </div>
@@ -217,15 +217,14 @@ const Resume = () => {
             </div>
           </div>
         </div>
-      </div>
+      </article>
       <hr />
-      <div className="resume-content">
+      <article className="resume-content">
         <div className="content-title">
           <h2>Education</h2>
         </div>
         <div className="content-container">
           <div className="content-experience">
-            {/* Wipro */}
             <div className="company-title">
               <h3>NIRMA UNIVERSITY</h3>
               <p>2011 - 2014</p>
@@ -239,7 +238,6 @@ const Resume = () => {
             </div>
           </div>
           <div className="content-experience">
-            {/* Expinn */}
             <div className="company-title">
               <h3>GUJARAT UNIVERSITY</h3>
               <p>2014 - 2017</p>
@@ -254,9 +252,9 @@ const Resume = () => {
             </div>
           </div>
         </div>
-      </div>
+      </article>
       <hr />
-      <div className="resume-content">
+      <article className="resume-content">
         <div className="content-title">
           <h2> Certificate</h2>
         </div>
@@ -284,14 +282,14 @@ const Resume = () => {
             </div>
           </div>
         </div>
-      </div>
+      </article>
       <hr />
       <div className="resume-footer">
         <a href={resume2025} download="resume2025">
           <button>DOWNLOAD CV</button>
         </a>
       </div>
-    </div>
+    </section>
   );
 };
 

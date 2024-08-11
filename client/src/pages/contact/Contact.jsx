@@ -7,7 +7,7 @@ import ContactImg from "../../assets/images/contactImg.jpeg";
 
 const Contact = () => {
   return (
-    <div className="contact slide-up-fade-in">
+    <section className="contact slide-up-fade-in">
       <div className="contact-img">
         <LazyLoadImage
           alt={"photo of yashkumar"}
@@ -49,7 +49,7 @@ const Contact = () => {
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

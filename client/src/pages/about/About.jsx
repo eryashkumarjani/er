@@ -4,7 +4,7 @@ import AboutImg from "../../assets/images/aboutImg.jpeg";
 
 const About = () => {
   return (
-    <div className="about slide-up-fade-in">
+    <section className="about slide-up-fade-in">
       <div className="about-img">
         <LazyLoadImage
           alt={"photo of yashkumar"}
@@ -13,7 +13,7 @@ const About = () => {
           src={AboutImg}
         />
       </div>
-      <div className="about-title">
+      <article className="about-title">
         <h3> ABOUT YASHKUMAR JANI </h3>
         <p>
           {" "}
@@ -31,8 +31,8 @@ const About = () => {
           />{" "} */}
           <button style={{ padding: "5px 10px" }}>LET'S CHAT</button>
         </a>
-      </div>
-    </div>
+      </article>
+    </section>
   );
 };
 

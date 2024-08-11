@@ -16,10 +16,10 @@ const Layout = () => {
       {loading ? (
         <Loader />
       ) : (
-        <div className="layout">
+        <main className="layout">
           <Outlet />
           <Navbar />
-        </div>
+        </main>
       )}
     </>
   );

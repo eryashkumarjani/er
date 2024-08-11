@@ -463,3 +463,21 @@
     }
   }
 }
+
+// not found
+.not-found {
+  @include flex-center-mixin;
+  flex-direction: column;
+
+  svg {
+    font-size: 10rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  a {
+    margin-top: 2.2rem;
+  }
+}
